@@ -100,6 +100,8 @@ declare interface SwipeablePanelProps extends React.Props<SwipeablePanel> {
    * if set to true the children will not be wrapped in a scroll view
    */
   noScrollView?: boolean;
+
+  children?: React.ReactNode;
 }
 
 declare class SwipeablePanel extends React.Component<SwipeablePanelProps, any> {}

@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/types/rn-swipeable-panel
 
 import * as React from 'react';
-import { ScrollViewProps } from 'react-native';
+import type { ScrollView } from 'react-native';
 
 declare interface SwipeablePanelProps extends React.Props<SwipeablePanel> {
   /**
@@ -96,12 +96,14 @@ declare interface SwipeablePanelProps extends React.Props<SwipeablePanel> {
   /**
    * You can pass your scroll view props
    */
-  scrollViewProps?: ScrollViewProps;
+  scrollViewProps?: React.ComponentProps<typeof ScrollView>;
 
   /**
    * if set to true the children will not be wrapped in a scroll view
    */
   noScrollView?: boolean;
+
+  children?: React.ReactNode;
 }
 
 declare var LARGE_PANEL_CONTENT_HEIGHT: number;
