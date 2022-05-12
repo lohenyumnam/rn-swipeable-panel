@@ -32,7 +32,7 @@ export default function App() {
           openDarkPanel={openDarkPanel}
         />
       </SafeAreaView>
-      <SwipeablePanel {...panelState} onClose={closePanel}>
+      <SwipeablePanel {...panelState} onClose={closePanel} noScrollView>
         <PanelContent
           contentType={panelState.contentType}
           panelState={panelState}

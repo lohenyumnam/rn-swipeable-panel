@@ -8,7 +8,6 @@ import {
   Animated,
   Dimensions,
   PanResponder,
-  ScrollViewProps,
 } from 'react-native';
 
 import { Bar } from './Bar';
@@ -42,8 +41,9 @@ type SwipeablePanelProps = {
   barStyle?: object;
   barContainerStyle?: object;
   allowTouchOutside?: boolean;
-  scrollViewProps?: ScrollViewProps;
+  scrollViewProps?: React.ComponentProps<typeof ScrollView>;
   noScrollView?: boolean;
+  children?: React.ReactNode;
 };
 
 type MaybeAnimated<T> = T | Animated.Value;

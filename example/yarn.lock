@@ -4975,7 +4975,7 @@ rn-swipeable-panel@^1.2.3, rn-swipeable-panel@^1.2.5:
 
 rn-swipeable-panel@lohenyumnam/rn-swipeable-panel#no-scrollview:
   version "1.2.7"
-  resolved "https://codeload.github.com/lohenyumnam/rn-swipeable-panel/tar.gz/f14bb7126243459569e1882975a57a1bf27bb82a"
+  resolved "https://codeload.github.com/lohenyumnam/rn-swipeable-panel/tar.gz/75304f11e3606bccb010bf8da1000b856a8a0e8f"
   dependencies:
     rn-swipeable-panel "^1.2.5"
 
